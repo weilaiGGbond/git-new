@@ -1,0 +1,153 @@
+$baseColor : rgb(210, 228, 247);
+$width-box : 100%;
+$height: 500px;
+$cursor: pointer;
+$weight:400;
+$baseBorder:1px black solid;
+*{
+   margin: 0;
+   padding: 0;
+}
+
+#main {
+ background: linear-gradient(to right,rgb(210, 228, 247),rgb(105, 167, 232)  );
+ margin-top: 100px;
+ height: $height;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: $width-box;
+ display: flex;
+ justify-content: center;
+  #logUp{
+      bottom: 10%;
+      left: 32%;
+      cursor: $cursor;
+      position: absolute;
+      span{
+         font-size: 12px;
+      }
+      button{
+         border: none;
+         background:rgba(0, 0, 0,0);
+         color: black;
+      }
+      button:hover{
+         color: purple;
+      }
+    }
+    #btn{
+   background-color:beige;
+   border-radius: 5px;
+   color: rgb(167, 182, 182);
+   width: $width-box;
+   height: 20px;
+   margin-top: 20px;
+   border: none;
+   cursor: $cursor;
+}
+ .user {
+    height:$height;
+   margin-top:50px;
+   width: $width-box/4;
+   padding-right: 30px;
+    font-size: 10px;
+    line-height: 2;
+   
+    h2{
+      font-weight: $weight;
+      font-size: 20px;
+    }
+    h3{
+      font-size: 15px;
+      font-weight: $weight;
+    }
+    p{
+      font-weight: $weight/2;
+      font-size:10px;
+    }
+   .loginForm{
+      width: $width-box;
+      input{
+   cursor: text;
+   border: none;
+   background-color: $baseColor;
+   border-bottom: $baseBorder;
+   width: $width-box;
+   margin: 10px 0;
+}
+#code{
+   cursor: text;
+   border-bottom: $baseBorder;
+   margin: 10px 0;
+   width: $width-box/2;
+}
+.codeimg{
+ width: 70px;
+ height: 20px;
+ display: block;
+ background-color: #fff;
+ border: 0.5px black solid;
+border-radius: 2px;
+}
+
+   }
+ };
+ .img{
+ img{
+    width: 100%;
+    height: $height;
+    position: relative;
+ }
+ p{
+   width: $width-box/4;
+   position: absolute;
+ left: 50%;
+ transform: translate(0,-125%);
+   top: 150px;
+   text-align: center;
+   line-height: 1.5;
+   cursor:pointer;
+   color: rgb(0, 0, 0);
+   font-size:20px;
+ }
+ }
+}
+.signIn{
+   width: 300px;
+   height: 300px;
+   border: $baseBorder;
+   display: none;
+   position: absolute;
+   border-radius: 5px;
+   background: #fff;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ form{
+   margin: 0 auto;
+ }
+   h2{
+      font-size: 20px;
+      color: cornflowerblue;
+      text-align: center;
+      font-weight: $weight;
+   }
+   .signdiv{
+      left: 80px;
+      position: relative;
+   h3{
+      font-size: 15px;
+      font-weight: $weight;
+   }
+   input{
+      width: 150px;
+      border: $baseBorder;
+   }
+   button{
+      margin-top: 10px;
+      width: 75px;
+   }
+}
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理系统的增删改查</title>
+</head>
+<link rel="stylesheet" href="../css/testchange.css">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<body>
+    <div class="left">
+    </div>
+    <div class="top"></div>
+   <div class="check"><input id="btn" type="text" placeholder="请输入菜名">
+    <button id="search">搜索</button>
+    <button class="add">添加</button>
+</div> 
+   <div class="table">
+    <div class="head"><ul>
+        <li><input type="checkbox"></li>
+        <li>菜名</li>
+    <li>价格</li>
+    <li>描述</li>
+    <li>类型</li>
+    <li>操作</li></div>
+   <div class="body"> <ul>
+    <li><input type="checkbox"></li>
+    <li>白菜</li>
+<li>03</li>
+<li>描述</li>
+<li>蔬菜</li>
+<li><span class="edit"onclick="check(this)">编辑</span>
+    <span class="del"onclick='del(this)'>删除</span></li>
+</ul>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li>胡萝卜</li>
+    <li>2.1</li>
+    <li>描述</li>
+    <li>蔬菜</li>
+    <li><span class="edit"onclick="check(this)">编辑</span>
+        <span class="del"onclick='del(this)'>删除</span></li>
+    </ul>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li>包头菜</li>
+    <li>0.1</li>
+    <li>报吃</li>
+    <li>蔬菜</li>
+    <li><span class="edit" onclick="check(this)">编辑</span>
+        <span class="del"onclick='del(this)'>删除</span></li>
+    </ul>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li>火龙果
+        </li>
+    <li>03</li>
+    <li>描述</li>
+    <li>水果</li>
+    <li><span class="edit"onclick="check(this)">编辑</span>
+        <span class="del" onclick='del(this)'>删除</span></li>
+    </ul>
+</div>
+<div class="addAll">
+    <h2>编辑</h2>
+    <div>菜名<input class="name" type="text"></div>
+    <div>价格<input  class="price" type="text"></div>
+    <div>描述<input class="desc" type="text" ></div>
+    <div>类型<input type="text" class="typename"></div>
+    <button id="alter">确认修改</button>
+    <button id="cancel">取消</button>
+   </div>
+   </div>
+   <div class="paging">
+    <button id="prv" ><<</button>
+    <span id="page">第1页</span>
+    <button id="next">>></button>
+   </div>
+   
+</body>
+<script src="testchange.js"></script>
+</html> 

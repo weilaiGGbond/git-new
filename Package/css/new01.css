@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  background: linear-gradient(to right, #d2e4f7, #69a7e8);
+  margin-top: 100px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#main #logUp {
+  bottom: 10%;
+  left: 32%;
+  cursor: pointer;
+  position: absolute;
+}
+
+#main #logUp span {
+  font-size: 12px;
+}
+
+#main #logUp button {
+  border: none;
+  background: transparent;
+  color: black;
+}
+
+#main #logUp button:hover {
+  color: purple;
+}
+
+#main #btn {
+  background-color: beige;
+  border-radius: 5px;
+  color: #a7b6b6;
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#main .user {
+  height: 500px;
+  margin-top: 50px;
+  width: 25%;
+  padding-right: 30px;
+  font-size: 10px;
+  line-height: 2;
+}
+
+#main .user h2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#main .user h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#main .user p {
+  font-weight: 200;
+  font-size: 10px;
+}
+
+#main .user .loginForm {
+  width: 100%;
+}
+
+#main .user .loginForm input {
+  cursor: text;
+  border: none;
+  background-color: #d2e4f7;
+  border-bottom: 1px black solid;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#main .user .loginForm #code {
+  cursor: text;
+  border-bottom: 1px black solid;
+  margin: 10px 0;
+  width: 50%;
+}
+
+#main .user .loginForm .codeimg {
+  width: 70px;
+  height: 20px;
+  display: block;
+  background-color: #fff;
+  border: 0.5px black solid;
+  border-radius: 2px;
+}
+
+#main .img img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#main .img p {
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  transform: translate(0, -125%);
+  top: 150px;
+  text-align: center;
+  line-height: 1.5;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+}
+
+.signIn {
+  width: 300px;
+  height: 300px;
+  border: 1px black solid;
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signIn form {
+  margin: 0 auto;
+}
+
+.signIn h2 {
+  font-size: 20px;
+  color: cornflowerblue;
+  text-align: center;
+  font-weight: 400;
+}
+
+.signIn .signdiv {
+  left: 80px;
+  position: relative;
+}
+
+.signIn .signdiv h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.signIn .signdiv input {
+  width: 150px;
+  border: 1px black solid;
+}
+
+.signIn .signdiv button {
+  margin-top: 10px;
+  width: 75px;
+}
