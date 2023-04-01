@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <link rel="stylesheet" href="../css/new01.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        </div>
+        <div class="bottom">
+        </div>
+    <div id="main">
+        
+        <div class="user">
+            <h2>账户登录</h2>
+            <p>你若不离不弃，我便生死相依</p>
+            <form class="loginForm">
+                <h3>账号</h3>
+                <input id="us" type="text" placeholder="请输入你的账户名"><br>
+                <h3>密码</h3>
+                <input id="ps" type="password" placeholder="请输入你的密码"><br>
+                <!--为密码设置眼睛：点击时显示密码，再次点击时密码隐藏-->
+            </form>
+            <button id="btn">登录</button>
+            <img class="showimg" src="img/closeeye.png" alt="显示密码">
+        </div>
+
+        <div id="logUp"><span>没有账号</span>
+            <button id="block">立即注册</button>
+        </div>
+        <div class="img">
+            <img src="img/login.png" alt="">
+            <p>欢迎使用偌伊登录界面</p>
+            <p style="top:180px ;font-size:10px">Welcome to use Ruoyi landing page</p>
+        </div>
+    </div>
+    <div class="signIn" id="signIn">
+        <h2>注册页面</h2>
+        <div class="signdiv">
+            <h3>账号</h3>
+            <input id="usin" type="text" placeholder="请输入账户名"><br>
+            <h3>密码</h3>
+            <input id="psin" type="password" placeholder="请输入账户名密码">
+            <img class="signShow" src="img/closeeye.png" alt="显示密码图片"><br>
+            <h3>邮箱</h3>
+            <input id="emailin" type="text" placeholder="请输入邮箱"><br>
+            <h3>验证码</h3>
+            <input id="code" type="text" placeholder="请输入验证码" style="width:125px">
+            <button id="codebtn">获取</button>
+            <div>
+            <button id="signBtn">注册</button>
+            <button id="cancel">取消</button>
+        </div>
+    </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

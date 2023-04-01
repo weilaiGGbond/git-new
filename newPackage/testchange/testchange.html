@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理系统的增删改查</title>
+</head>
+<link rel="stylesheet" href="../css/testchange.css">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="../testchange/img/logo.jpg" alt="图标">
+        </div>
+        <div class="text">
+            <p id="backLogin"><i><img src="../testchange/img/home.png" alt="主页图标"></i>登录页面</p>
+            <p id="shop"> <i><img src="../testchange/img/shop.png" alt="商品图标"></i>商品库管理</p>
+            <p id="list"><i><img src="../testchange/img/list.png" alt="订单图标"></i>订单管理</p>
+            <p id="masterManage"><i><img src="../testchange/img/master.png" alt="账号图标"></i>账号管理</p>
+        </div>
+    </div>
+    <div class="top">
+        <div class="check">
+            <button id="search" style="background-color: cornflowerblue;">搜索</button>
+            <input id="btn" type="text" placeholder="请输入菜名">
+        </div>
+
+        <div class="headshot">
+            <img src="../testchange/img/headshot.webp" alt="头像">
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="head-top">
+            <button id="add">添加</button>
+            <div class="paging">
+                <button id="prv"><img src="../testchange/img/prv.png" alt="向前"></button>
+                <span id="page">第1页</span>
+                <button id="next"><img src="../testchange/img/next.png" alt="向后"></button>
+                <span id="total">共1页</span>
+            </div>
+            <!-- <div class="filtrate">
+                <button class="allPrice">全部区间</button>
+                <button class="filtLarge">100以上</button>
+                <button class="filtMiddle">50~100</button>
+                <button class="filtSmall">0~50</button>
+            </div> -->
+        </div>
+        <div class="head">
+            <ul>
+                <li>菜名</li>
+                <li>价格</li>
+                <li>描述</li>
+                <li>类型名</li>
+                <li>类型标识</li>
+                <li>操作</li>
+                <li style="display: none;">id</li>
+        </div>
+        <div class="body">
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>
+                    <span class="edit" onclick="check(this)">编辑</span>
+                    <span class="del" onclick='del(this)'>删除</span>
+                </li>
+                <li style="display: none;">id</li>
+            </ul>
+        </div>
+        <div class="addAll">
+            <h2>添加</h2>
+            <div>菜名<input class="name" type="text"></div>
+            <div>价格<input class="price" type="text"></div>
+            <div>描述<input class="desc" type="text"></div>
+            <div>类型名<input class="typename" type="text"></div>
+            <div>类型标识<select name="typeid" id="typeid">
+                    <option value="choose">请选择类型标识</option>
+                    <option value="0">面</option>
+                    <option value="1">米</option>
+                    <option value="2">饮品</option>
+                    <option value="3">水果</option>
+                </select></div>
+            <button id="addAlter">确认添加</button>
+            <button id="addCancel">取消</button>
+        </div>
+        <!----------------------------------------------------------->
+        <div class="editAll">
+            <h2>编辑</h2>
+            <div>菜名<input class="editname" type="text"></div>
+            <div>价格<input class="editprice" type="text"></div>
+            <div>描述<input class="editdesc" type="text"></div>
+            <div>类型名<input class="edittypename" type="text"></div>
+            <div>类型标识<select name="edittypeid" id="edittypeid">
+                    <option value="choose">请选择类型标识</option>
+                    <option value="0">面</option>
+                    <option value="1">米</option>
+                    <option value="2">饮品</option>
+                    <option value="3">水果</option>
+                </select></div>
+            <button id="editAlter">确认修改</button>
+            <button id="editCancel">取消</button>
+        </div>
+    </div>
+
+
+    <!--显示账户信息 -->
+
+    <div class="master" style="display: none;">
+        <div class="triangle">
+        </div>
+        <div class="message">
+            <button id="out">退出登录</button>
+            <button onclick="window.location.href='../testchange/testchange.html'">刷新页面</button>
+        </div>
+
+    </div>
+
+</body>
+<script src="testchange.js"></script>
+
+</html>
